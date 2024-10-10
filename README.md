@@ -1,26 +1,7 @@
-# kotaemon
+# Kantik DocAI
 
-An open-source clean & customizable RAG UI for chatting with your documents. Built with both end users and
-developers in mind.
 
-![Preview](https://raw.githubusercontent.com/Cinnamon/kotaemon/main/docs/images/preview-graph.png)
 
-[Live Demo](https://huggingface.co/spaces/cin-model/kotaemon-demo) |
-[Source Code](https://github.com/Cinnamon/kotaemon)
-
-[User Guide](https://cinnamon.github.io/kotaemon/) |
-[Developer Guide](https://cinnamon.github.io/kotaemon/development/) |
-[Feedback](https://github.com/Cinnamon/kotaemon/issues)
-
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-31013/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-<a href="https://github.com/Cinnamon/kotaemon/pkgs/container/kotaemon" target="_blank">
-<img src="https://img.shields.io/badge/docker_pull-kotaemon:latest-brightgreen" alt="docker pull ghcr.io/cinnamon/kotaemon:latest"></a>
-![download](https://img.shields.io/github/downloads/Cinnamon/kotaemon/total.svg?label=downloads&color=blue)
-<a href='https://huggingface.co/spaces/cin-model/kotaemon-demo'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue'></a>
-<a href="https://hellogithub.com/en/repository/d3141471a0244d5798bc654982b263eb" target="_blank"><img src="https://abroad.hellogithub.com/v1/widgets/recommend.svg?rid=d3141471a0244d5798bc654982b263eb&claim_uid=RLiD9UZ1rEHNaMf&theme=small" alt="Featured｜HelloGitHub" /></a>
-
-<a href="https://trendshift.io/repositories/11607" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11607" alt="Cinnamon%2Fkotaemon | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 ## Introduction
 
@@ -52,8 +33,6 @@ documents and developers who want to build their own RAG pipeline.
 +----------------------------------------------------------------------------+
 ```
 
-This repository is under active development. Feedback, issues, and PRs are highly
-appreciated.
 
 ## Key Features
 
@@ -119,17 +98,6 @@ docker run \
 ghcr.io/cinnamon/kotaemon:main-full
 ```
 
-Currently, two platforms: `linux/amd64` and `linux/arm64` (for newer Mac) are provided & tested. User can specify the platform by passing `--platform` in the docker run command. For example:
-
-```
-# To run docker with platform linux/arm64
-docker run \
--e GRADIO_SERVER_NAME=0.0.0.0 \
--e GRADIO_SERVER_PORT=7860 \
--p 7860:7860 -it --rm \
---platform linux/arm64 \
-ghcr.io/cinnamon/kotaemon:main-lite
-```
 
 If everything is set up fine, navigate to `http://localhost:7860/` to access the web UI.
 
