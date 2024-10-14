@@ -13,6 +13,8 @@ from theflow.settings import settings
 from theflow.utils.modules import import_dotted_string
 
 
+
+
 class BaseApp:
     """The main app of Kotaemon
 
