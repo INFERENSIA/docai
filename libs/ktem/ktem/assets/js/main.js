@@ -7,7 +7,7 @@ function run() {
   main_parent.parentNode.parentNode.style = "padding: 0";
 
   const version_node = document.createElement("p");
-  version_node.innerHTML = "version: KH_APP_VERSION";
+//  version_node.innerHTML = "version: KH_APP_VERSION";
   version_node.style = "position: fixed; top: 10px; right: 10px;";
   main_parent.appendChild(version_node);
 

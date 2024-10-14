@@ -37,7 +37,7 @@ class BaseApp:
     def __init__(self):
         self.dev_mode = getattr(settings, "KH_MODE", "") == "dev"
         self.app_name = getattr(settings, "KH_APP_NAME", "Kantik")
-        self.app_version = getattr(settings, "KH_APP_VERSION", "")
+        # self.app_version = getattr(settings, "KH_APP_VERSION", "")
         self.f_user_management = getattr(settings, "KH_FEATURE_USER_MANAGEMENT", False)
         self._theme = KotaemonTheme()
 
@@ -46,7 +46,7 @@ class BaseApp:
             self._css = fi.read()
         with (dir_assets / "js" / "main.js").open() as fi:
             self._js = fi.read()
-            self._js = self._js.replace("KH_APP_VERSION", self.app_version)
+            # self._js = self._js.replace("KH_APP_VERSION", self.app_version)
         with (dir_assets / "js" / "pdf_viewer.js").open() as fi:
             self._pdf_view_js = fi.read()
             # workaround for Windows path
