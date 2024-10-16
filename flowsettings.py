@@ -273,7 +273,7 @@ SETTINGS_REASONING = {
     "lang": {
         "name": "Language",
         "value": "en",
-        "choices": [("English", "en"), ("Japanese", "ja"), ("Vietnamese", "vi")],
+        "choices": [("English", "en"), ("Japanese", "ja"), ("Vietnamese", "vi"), ("French", "fr")],
         "component": "dropdown",
     },
     "max_context_length": {
